@@ -1,0 +1,1 @@
+# sample-rails-schema-driven
