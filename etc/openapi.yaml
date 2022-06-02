@@ -18,16 +18,16 @@ paths:
             application/json:
               schema:
                 type: object
+                required: [users]
                 properties:
                   users:
                     type: array
                     items:
-                      type: "object"
+                      type: object
                       properties:
                         id:
-                          type: "integer"
-                          format: "int64"
+                          type: integer
                           example: 1
                         name:
-                          type: "string"
-                          example: "test"
+                          type: string
+                          example: test
