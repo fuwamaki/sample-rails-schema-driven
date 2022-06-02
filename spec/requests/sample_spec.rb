@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe "Samples", type: :request do
-  describe "GET /index" do
-    pending "add some examples (or delete) #{__FILE__}"
+  describe 'GET /users' do
+    it do
+      get url_for(%i[users])
+      assert_response_schema_confirm(200)
+    end
   end
 end
